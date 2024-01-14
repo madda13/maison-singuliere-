@@ -23,25 +23,35 @@
         }
 
         h1, .profile-link {
-            color: #000000;
+            color: #333;
         }
 
         .social-links {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
-            width: 60%; /* Ajustez la largeur selon vos besoins */
+            width: 80%; /* Ajustez la largeur selon vos besoins */
             margin-top: 20px;
         }
 
         .profile-link {
             flex: 1;
+            width: 100%;
+            margin: 10px 0;
             padding: 15px 30px;
             background-color: #3498db;
             color: #fff;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            /* Styles spécifiques pour les appareils mobiles */
+            .social-links {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -55,6 +65,7 @@
     </div>
 </body>
 </html>
+
 
 
 
