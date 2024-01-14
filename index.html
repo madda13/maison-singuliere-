@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre Page Sociale</title>
+    <link rel="stylesheet" href="https://www.dafont.com/fr/plante.font">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Plante', sans-serif;
+            background-image: url('https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/vdn_864w/2022/11/12/node_1252963/55731016/public/2022/11/12/B9732647459Z.1_20221112181342_000+GQMLL8S4M.1-0.jpg');
+            background-size: cover;
+            background-position: center;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -16,53 +19,39 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            color: #fff; /* Changez la couleur du texte en fonction de l'image de fond */
         }
 
-        h1 {
-            color: #333;
+        h1, .profile-link {
+            color: #000000;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            width: 60%; /* Ajustez la largeur selon vos besoins */
+            margin-top: 20px;
         }
 
         .profile-link {
-            display: inline-block;
+            flex: 1;
             padding: 15px 30px;
             background-color: #3498db;
             color: #fff;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            margin-top: 20px;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur notre page sociale</h1>
+    <h1>Voici les réseaux de Maison Singulier</h1>
 
-    <!-- Lien pour Instagram -->
-    <a href="https://www.instagram.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Instagram</a>
-
-    <!-- Lien pour Facebook -->
-    <a href="https://www.facebook.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Facebook</a>
-
-    <!-- Script pour générer les QR Codes -->
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-    <script>
-        // Lien pour Instagram
-        var instagramLink = "https://www.instagram.com/votre_nom/";
-        var instagramQRCode = new QRCode(document.createElement("div"), {
-            text: instagramLink,
-            width: 128,
-            height: 128,
-        });
-        document.body.appendChild(instagramQRCode._el);
-
-        // Lien pour Facebook
-        var facebookLink = "https://www.facebook.com/votre_nom/";
-        var facebookQRCode = new QRCode(document.createElement("div"), {
-            text: facebookLink,
-            width: 128,
-            height: 128,
-        });
-        document.body.appendChild(facebookQRCode._el);
-    </script>
+    <!-- Liens pour Instagram et Facebook -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Instagram</a>
+        <a href="https://www.facebook.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Facebook</a>
+    </div>
 </body>
 </html>
