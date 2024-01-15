@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: 'Plante', sans-serif;
-            background-image: url('https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/vdn_864w/2022/11/12/node_1252963/55731016/public/2022/11/12/B9732647459Z.1_20221112181342_000+GQMLL8S4M.1-0.jpg');
-            background-size: cover;
+            background-image: url('https://th.bing.com/th/id/OIP.N2RtaUxZEB04j_ukSzNXlAAAAA?rs=1&pid=ImgDetMain');
+            background-size: 15%; /* Ajustez le pourcentage selon vos besoins pour dézoomer l'image */
             background-position: center;
             text-align: center;
             margin: 0;
@@ -28,20 +28,33 @@
 
         .social-links {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
-            width: 60%; /* Ajustez la largeur selon vos besoins */
+            width: 80%; /* Ajustez la largeur selon vos besoins */
             margin-top: 20px;
         }
 
         .profile-link {
             flex: 1;
+            width: 100%;
+            margin: 10px 0;
             padding: 15px 30px;
             background-color: #3498db;
             color: #fff;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            /* Styles spécifiques pour les appareils mobiles */
+            body {
+                background-size: 100%; /* Ajustez le pourcentage selon vos besoins pour les appareils mobiles */
+            }
+            .social-links {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -50,8 +63,24 @@
 
     <!-- Liens pour Instagram et Facebook -->
     <div class="social-links">
-        <a href="https://www.instagram.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Instagram</a>
-        <a href="https://www.facebook.com/votre_nom/" class="profile-link" target="_blank">Visitez notre Facebook</a>
+        <a href="https://www.instagram.com/maisonsinguliere_deco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="profile-link" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100085934167461" class="profile-link" target="_blank">Facebook</a>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
